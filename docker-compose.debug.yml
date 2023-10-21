@@ -1,0 +1,35 @@
+version: "3.1"
+
+services:
+  web:
+    image: mallorca-magic-backend
+    build: .
+    command: gunicorn -b 0.0.0.0:8000 -w 5 --threads 16 mallorcamagicBackend.wsgi:application
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=rgqeRAk2!Z2aWc8X
+      - MONGO_INITDB_DATABASE=mallorcadb
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - /var/lib/docker/volumes/c8a86532547ab554d7054bbc825f6f9e58fcaedbcea9d15264094da7c04ad845/_data:/data/dbs
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: rgqeRAk2!Z2aWc8X
+      ME_CONFIG_MONGODB_URL: mongodb://root:rgqeRAk2!Z2aWc8X@mongo:27017
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: (8zd5SbhuVJ)Q2v!

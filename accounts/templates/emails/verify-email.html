@@ -1,0 +1,288 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+
+    <title></title>
+    <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 698px !important;
+        }
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        @font-face {
+            font-family: 'Qartella';
+            src: url("{{ hostname }}{% static 'fonts/Qartella-ExtraBold.otf' %}") format('opentype'),
+                url("{{ hostname }}{% static 'fonts/Qartella-ExtraBold.otf' %}") format('opentype');
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0 !important; background-color: #E5E5E5; box-sizing: border-box !important;">
+    <div 
+        style="
+            height: 103px;
+            ">
+    <img 
+        src="{{ hostname }}{% static 'assets/bgc.png' %}"
+        style="
+            width: 100%; 
+            height: 257px;
+            " />
+    </div>
+    <table 
+        align="center" 
+        role="presentation" 
+        cellspacing="0" 
+        cellpadding="0" 
+        border='0' 
+        width="482" 
+        style="
+            background: #fff; 
+            width: 482px;
+            position: relative; 
+            z-index: 1;
+            box-shadow: 0px 4px 12px rgba(109, 141, 173, 0.18);
+            opacity: 0.999;
+            ">
+
+        <tr 
+            align="center">
+                <td 
+                    style="  
+                        font-size: 10px; 
+                        line-height: 16px; 
+                        color: #404040; 
+                        opacity: 0.6; 
+                        text-align: center;
+                        border-bottom: 1px dashed rgba(0, 0, 0, 0.2); 
+                        margin: 0; padding: 12px 0;
+                        font-family: Poppins, sans-serif;">
+                            If you are having problems viewing this in your email browser please 
+                            <a href="" 
+                                style="
+                                    text-decoration: none;
+                                    color: #000000;
+                                    font-weight: 700;
+                                    ">click here</a>
+                </td>
+        </tr>
+        <tr align="center">
+            <td style="
+            padding-top: 24px; 
+            padding-bottom: 17px;">
+                <img src="{{ hostname }}{% static 'assets/MM Full Logo.png' %}" />
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <img src="{{ hostname }}{% static 'assets/Illustration.png' %}" />
+            </td>
+        </tr>
+
+        <tr 
+            align="center">
+                <td style="
+                    font-size: 20px;
+                    line-height: 24px; 
+                    font-weight: 800; 
+                    color: #000000; 
+                    text-align: center;
+                    font-family: Qartella, sans-serif;
+                    padding-top: 17px;">
+                        Account Activation
+                </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <div>
+                    <div 
+                        style="
+                            margin-top: 12px;
+                            margin-top: 18px;
+                            width: 90px; 
+                            height: 4px; 
+                            border-radius: 30px; 
+                            background-color: #26ADE3;">
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr 
+            align="center" 
+            style="text-align: center;
+            ">
+                <td style="   
+                        padding-top: 18px;
+                        padding-left: 35px;
+                        padding-right: 35px;
+                        font-size: 14px;
+                        line-height: 28px; color: #404040;
+                        opacity: 0.99; letter-spacing: 0.25px;
+                        margin-top: 18px;
+                        font-family: Poppins, sans-serif;
+                        text-align: center;
+                        padding-bottom: 15px;
+                        ">
+                        Click on the button <b>“Click here to verify”</b> to authenticate
+                        your new account. We want you to get started as soon as
+                        possible. If by any chance you are not able to click the
+                        button we have provided  a link for you to copy and paste
+                        in your browser.                 </td>
+        </tr>
+        <tr align="center">
+            <td style="text-align: start; padding: 0 31px; width: 100%;">
+                <input 
+                style="
+                    background: #FFFFFF;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0.25px;
+                    color: #333333;
+                    padding: 12px;
+                    width: 100%;
+                    " 
+                type="text" 
+                value="{{ url }}" />
+            </td>
+        </tr>
+
+        <tr 
+        align="center" 
+        style="
+            text-align: center; 
+            padding-top: 18px;">
+            <td 
+                style="
+                    padding: 20px 0 28px 0;">
+                        <a 
+                            href="{{ url }}"
+                            style="
+                                background: linear-gradient(180deg, #26ADE3 0%, #1877F2 100%);
+                                box-shadow: 0px 0px 12px rgba(28, 144, 227, 0.25);
+                                border-radius: 5px;
+                                border: 0;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: #FFFFFF;
+                                width: 100%;
+                                padding: 15px 147px;
+                                font-family: Poppins, sans-serif;
+                                text-decoration: unset;
+                        ">
+                            Click here to verify
+                        </a>
+            </td>
+    </tr>
+        <tr>
+            <td
+                style="
+                    border-top: 1px dashed rgba(0, 0, 0, 0.2); 
+                    font-size: 10px; 
+                    line-height: 16px; 
+                    color: #404040; 
+                    opacity: 0.6; 
+                    text-align: center;
+                    margin: 0; padding: 12px 0;
+                    font-family: Poppins, sans-serif;"
+            >
+            If you no longer wish to receive this emails pleese click  
+            <a href="" style="font-weight: 700; color: #000000">Unsubscribe </a>  at any moment. 
+            </td>
+        </tr>
+    </table>
+
+    <table 
+        align="center" 
+        role="presentation" 
+        cellspacing="0" 
+        cellpadding="0" 
+        border='0' 
+        width="100%" 
+        style="
+              margin: auto; 
+              border: none; 
+              background: linear-gradient(180deg, #26ADE3 0%, #1877F2 100%);
+              padding: 25px 7%;">
+
+        <tr 
+            align="center">
+            <td align="left">
+                    <p style="
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        font-family: Poppins, sans-serif;margin: 0;
+                    ">
+                        Copyright © Mallorca Magic 2022 
+                    </p>
+            </td>
+            <td align="right"> 
+                    <a 
+                        href="https://www.facebook.com/mallorca.is.magic" 
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <img 
+                                src="{{ hostname }}{% static 'assets/facebook.png' %}"
+                                style="
+                                    margin-right: 4%" /></a>
+                    <a 
+                        href="https://www.instagram.com/mallorcamagic/" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img
+                            src="{{ hostname }}{% static 'assets/instagram.png' %}"
+                            style="margin-right: 4%" /></a>
+                    <a  href="https://www.linkedin.com/company/mallorcamagic/" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img
+                            src="{{ hostname }}{% static 'assets/linkedin.png' %}"
+                            style="margin-right: 4%" /></a>
+                    <a  href="https://www.pinterest.de/mallorca_magic/" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img
+                            src="{{ hostname }}{% static 'assets/pinterest.png' %}"
+                            style="margin-right: 4%" /></a>
+                    <a  href="https://twitter.com/mallorca_magic" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img
+                            src="{{ hostname }}{% static 'assets/twiter.png' %}"
+                            style="margin-right: 4%" /></a>
+                    <a  href="https://www.tiktok.com/@mallorca.magic" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img
+                            src="{{ hostname }}{% static 'assets/tiktok.png' %}"
+                            style="margin-right: 4%" /></a>
+                    <a  href="https://www.youtube.com/channel/UCqYf68oGZFdpx8dwkdtZNiA" 
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img 
+                            src="{{ hostname }}{% static 'assets/youtube.png' %}" /></a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
